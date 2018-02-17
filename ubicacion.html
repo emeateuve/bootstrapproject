@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="estilazos.css" type="text/css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+    <title>Ubicacion</title>
+</head>
+<style>
+    body{
+        margin-top: 4%;
+    }
+</style>
+<body>
+<div class="contenido">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.jpg" width="30" height="30" alt="">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Platos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de entrantes">Entrantes</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de primeros platos">Primeros</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de segundos platos">Segundos</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de postress">Postres</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de bebidas">Bebidas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="menus.html" >Menu</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comentarios.html">Comentarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">¿Dónde estamos?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="migadepan col-lg-12 d-none d-lg-block d-xl-block">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">¿Dónde estamos?</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="col-lg-10 col-md-10 col-sm-10 col-10 jumbotron">
+        <h1 style="border-bottom: 1px solid white;font-family: 'Dancing Script', cursive" class="display-4">Magnifique</h1>
+        <div class="col-lg-12 d-lg-block d-sm-none d-md-none d-none">
+            <div class="row">
+                <div style="float: left;" class="col-lg-6">
+                    <p class="lead">Dirección: Av. Francisco Ayala</p>
+                </div>
+                <div style="float: right;" class="col-lg-6">
+                    <p class="lead">Teléfono: 958288288</p>
+                </div>
+
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12713.321326270601!2d-3.618484029113769!3d37.192382701199264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd64971351144a933!2sIES+Francisco+Ayala!5e0!3m2!1ses!2ses!4v1517994760111" width="80%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <hr class="my-4">
+        <a href="reserva.html">Reserva aquí ya</a>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 nombre">
+            <p>Miguel Ángel Torres Varo</p>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 links">
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 copy">
+            <p>Emeateuve 2018 &copy;</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Marvel" rel="stylesheet">

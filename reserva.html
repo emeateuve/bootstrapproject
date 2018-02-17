@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="estilazos.css" type="text/css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Marvel" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+    <title>Reserva</title>
+</head>
+<style>
+    body{
+        padding-top: 4%;
+        background: rgba(0,0,0,0.95);
+    }
+</style>
+<body>
+<div class="contenido">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.jpg" width="30" height="30" alt="">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Platos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de entrantes">Entrantes</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de primeros platos">Primeros</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de segundos platos">Segundos</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de postress">Postres</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de bebidas">Bebidas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="menus.html" >Menu</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comentarios.html">Comentarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">¿Dónde estamos?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="migadepan col-lg-12 d-none d-lg-block d-xl-block">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Reserva</li>
+
+            </ol>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="w-100" style="text-align: center; color: #fff;font-family: 'Dancing Script', cursive">Reserva aquí</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 formulario">
+                <form class="needs-validation" validate>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationTooltip01">Nombre</label>
+                            <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombre" required>
+                            <div class="valid-tooltip">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationTooltip02">Apellidos</label>
+                            <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos" required>
+                            <div class="valid-tooltip">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationTooltipUsername">Usuario</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Usuario" aria-describedby="validationTooltipUsernamePrepend" required>
+                                <div class="invalid-tooltip">
+                                    Please choose a unique and valid username.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationTooltip03">Ciudad</label>
+                            <input type="text" class="form-control" id="validationTooltip03" placeholder="Ciudad" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationTooltip04">Pais</label>
+                            <input type="text" class="form-control" id="validationTooltip04" placeholder="Pais" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationTooltip05">Código postal</label>
+                            <input type="text" class="form-control" id="validationTooltip05" placeholder="Código postal" required>
+                            <div class="invalid-tooltip">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" onclick="exito()">Enviar</button>
+                </form>
+            </div>
+            <div class="col-lg-12 col-sm-12 d-none d-md-block descripcionReserva">
+                <h3 style="text-align: center; margin-top: 5vh;">Completa este formulario para realizar una reserva.</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 nombre">
+            <p>Miguel Ángel Torres Varo</p>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 links">
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 copy">
+            <p>Emeateuve 2018 &copy;</p>
+        </div>
+    </div>
+</div>
+<script>
+    function exito() {
+        if (document.getElementById('validationTooltip01').value == false){
+            alert('Te falta por completar el nombre')
+        } else if (document.getElementById('validationTooltip02').value == false){
+            alert('Te falta por completar el apellido')
+        } else if (document.getElementById('validationTooltip03').value == false){
+            alert('Te falta por completar la ciudad')
+        } else if (document.getElementById('validationTooltip04').value == false){
+            alert('Te falta por completar el pais')
+        } else if (document.getElementById('validationTooltip05').value == false){
+            alert('Te falta por completar el código postal')
+        } else if (document.getElementById('validationTooltipUsername').value == false){
+            alert('Te falta por completar el nombre de usuario')
+        } else {
+            alert('Formulario completado correctamente.')
+        }
+    }
+</script>
+</body>
+</html>

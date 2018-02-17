@@ -1,0 +1,377 @@
+/*+++++++++++++++++++++++++++++++++++++++++INDICE++++++++++++++++++++++++++++++++++++*/
+
+span, p, div  {
+    font-family: 'Marvel', sans-serif !important;
+}
+ h1{
+     font-family: 'Dancing Script', cursive;
+
+ }
+.primero{
+    height: 50vh;
+    width: 100%;
+    color: #fff;
+}
+.segundo{
+    height: 50vh;
+    width: 100%;
+    color: #fff;
+}
+.tercero{
+    height: 50vh;
+    width: 100%;
+    color: #fff;
+}
+
+#primero {
+    height: 50vh;
+    color: #fff;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-image: url("./img/1.jpg");
+}
+
+#segundo {
+    height: 50vh;
+    color: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    background-image: url("./img/2.jpg");
+}
+
+#tercero {
+    height: 50vh;
+    color: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("./img/2.jpg");
+}
+
+.texto {
+    color: #fff;
+    float: left;
+    display: inline-block;
+    height: inherit;
+    width: 100%;
+}
+
+.texto span {
+    color: #fff;
+}
+
+.imagen {
+    display: inline-block;
+    width: 100%;
+    height: inherit;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.navbar ul {
+    margin: auto;
+}
+
+/******************************************RESERVA***************************************************/
+.formulario {
+    margin-top: 20vh;
+    width: 100%;
+}
+
+.formulario form {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 0px 10px 0px 10px;
+}
+
+.formulario label {
+    color: #fff;
+}
+
+.formulario button {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.formulario button:hover {
+    color: #000 !important;
+    background-color: white !important;
+}
+
+.descripcionReserva {
+    color: #fff;
+    width: 50% !important;
+    margin: auto;
+}
+
+.descripcionReserva p {
+    width: 50%;
+    margin: auto;
+}
+
+/***********************************************************************************************/
+.footer {
+    background-color: white;
+    color: red;
+    height: 40px;
+    min-width: 100%;
+    position: absolute;
+}
+
+.nombre {
+    display: inline-block;
+    height: inherit;
+}
+
+.links {
+    height: inherit;
+    text-align: center;
+    display: inline-block;
+}
+
+.links img {
+    height: 35px;
+    background-size: 100% 100%;
+
+}
+
+.copy {
+    display: inline-block;
+    height: inherit;
+    text-align: right;
+}
+
+.contenido {
+    min-height: 95vh;
+    width: 100%;
+}
+
+/*****************************************************   PLATOS    ******************************************************/
+.card-header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    margin: auto;
+    height: 30vh;
+    transition: width 0.2s linear, height 0.2s linear, opacity 0.2s linear, color 0.2s linear;
+    border-radius: 0px !important;
+    background-color: black !important;
+
+}
+
+.card {
+    border: 0px !important;
+}
+
+.card-body {
+    min-height: 70vh;
+    background-color: white;
+    width: 100%;
+
+}
+
+[id*="heading"]:hover {
+    opacity: 0.4;
+    height: 33vh;
+    margin: auto;
+
+}
+
+/*#headingOne {*/
+/*background-image: url("./img/prueba.jpg");*/
+/*}*/
+
+/*#headingTwo {*/
+/*background-image: url("./img/prueba.jpg");*/
+/*}*/
+
+/*#headingThree {*/
+/*background-image: url("./img/prueba.jpg");*/
+
+/*}*/
+
+/*#headingFour {*/
+/*background-image: url("./img/prueba.jpg");*/
+/*}*/
+
+/*#headingFive {*/
+/*background-image: url("./img/prueba.jpg");*/
+/*}*/
+
+.card h4 {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card button:hover {
+    text-decoration: none;
+}
+
+.card button:focus {
+    text-decoration: none;
+}
+
+.carousel {
+    padding: 0px;
+    margin: 0px;
+}
+
+.slide {
+    height: 95vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.carousel-item {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 95vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: inherit;
+}
+
+.split {
+    width: 100%;
+    display: table;
+}
+
+.mediacarta {
+    width: 50%;
+    float: left;
+}
+
+/*************************************BREADCRUMB**************************************************************/
+.breadcrumb {
+    background-color: transparent !important;
+    padding-bottom: 0px !important;
+    width: 100% !important;
+}
+
+.migadepan {
+    background-color: black;
+    color: #fff;
+    height: 48px;
+    width: 100% !important;
+}
+
+.breadcrumb a {
+    color: #fff;
+}
+
+.breadcrumb a:active {
+    color: red;
+}
+
+/*##########################################
+                 Comentarios
+############################################*/
+
+.comentarios {
+    margin-top: 1vh;
+}
+
+.entrada {
+    width: 100% !important;
+    height: 20vh;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.usuario {
+    width: 100%;
+    float: left;
+    display: block;
+    border-right: 1px solid black;
+    height: inherit;
+    text-align: center;
+}
+
+.usuario span {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.usuario span:first-child {
+    margin-top: 20%;
+}
+
+.comentario {
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    height: inherit;
+}
+
+.titulo {
+    width: 100%;
+    display: inline-block;
+    height: 5vh;
+    border-bottom: 1px solid black;
+}
+
+.mensaje {
+    width: 100%;
+    display: inline-block;
+    height: 15vh;
+}
+
+/************************************************************************************/
+.botonciyo {
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+    background-color: transparent;
+    height: 95vh;
+    width: 100%;
+}
+
+.galeria {
+    display: inline-block;
+    float: left;
+    height: inherit;
+    width: 99%;
+}
+
+/*******************************************************************************************/
+.jumbotron {
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    background-color: black !important;
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
+    color: #fff;
+
+}
+
+.jumbotron a {
+    text-align: center;
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 0px 10px 0px 10px;
+    transition: color 0.5s linear;
+    transition: background-color 0.5s linear;
+
+}
+
+.jumbotron a:hover {
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+}
+
+.mapa iframe {
+    width: 100%;
+}
+
+/**************************fuentes************************/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Marvel');

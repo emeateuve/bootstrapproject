@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="estilazos.css" type="text/css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+            crossorigin="anonymous"></script>
+    <title>Platos</title>
+</head>
+<style>
+    body {
+        margin-top: 4%;
+    }
+</style>
+<body>
+<div class="contenido">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.jpg" width="30" height="30" alt="">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Platos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de entrantes">Entrantes</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de primeros platos">Primeros</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de segundos platos">Segundos</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de postress">Postres</a>
+                        <a class="dropdown-item" href="platos.html" data-toggle="hover" data-placement="bottom" title="Sección de bebidas">Bebidas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="menus.html" >Menu</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comentarios.html">Comentarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">¿Dónde estamos?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="migadepan col-lg-12 d-none d-lg-block d-xl-block">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Platos</li>
+
+            </ol>
+        </nav>
+    </div>
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0 text-center">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne">
+                        <h4>Entrantes</h4>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/1.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Pintxos</h5>
+                            <button type="button" class="btn btn-secondary align-self-center" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Famoso aperitivo típico del norte de España. Rebanada de pan con ingredientes variados sujetos por un palillo. Entre los más comunes tortilla, merluza, pulpo, bacalao, pimientos rellenos, croquetas…">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/2.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">BACKHENDL SALAT</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Típica de Austria, ensalada servida con tiras de pollo empanado.">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/3.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">INSALATA CAPRESE</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Es una de las ensaladas italianas típicas, lleva rodajas de tomate y bolas de mozzarella fresca. Se acompaña de unas hojas de albahaca y aceite de oliva.">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/4.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">GUACAMOLE</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Salsa de origen mexicano preparada con sal, pimienta, jugo de limón, cebolla picada y cilantro. Se sirve con totopos.">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/5.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">PLOUGHMAN'S LUNCH</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Conocido aperitivo frío de Reino Unido y consiste en trozos de queso cheddar, embutidos o cebolletas en vinagre, pan y mantequilla.">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/6.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">ALOO TIKKI</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Un aperitivo del norte de la India hecho de patata machacada con diversas hierbas, como cilantro y especias, fritos en vanaspati (aceite vegetal).">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/7.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">GUASAÑA A LA LIMEÑA</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Es un plato tradicional de la cocina peruana. Hecho a base de papa (patata), limón, ají amarillo, pollo, atún o mariscos. ">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                        <img class="card-img-top" src="./img/entrantes/8.jpg" alt="Hey" style="height: inherit;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">BRETZEL</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                    data-placement="bottom"
+                                    title="Entrante originario de Alemania. Consiste en un bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado.">
+                                Descripción
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="split">
+                <div class="card mediacarta">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed holi" data-toggle="collapse"
+                                    data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>Primeros</h4>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/1.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pintxos</h5>
+                                    <button type="button" class="btn btn-secondary align-self-center" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Famoso aperitivo típico del norte de España. Rebanada de pan con ingredientes variados sujetos por un palillo. Entre los más comunes tortilla, merluza, pulpo, bacalao, pimientos rellenos, croquetas…">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/2.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BACKHENDL SALAT</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Típica de Austria, ensalada servida con tiras de pollo empanado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/3.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">INSALATA CAPRESE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es una de las ensaladas italianas típicas, lleva rodajas de tomate y bolas de mozzarella fresca. Se acompaña de unas hojas de albahaca y aceite de oliva.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/4.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUACAMOLE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Salsa de origen mexicano preparada con sal, pimienta, jugo de limón, cebolla picada y cilantro. Se sirve con totopos.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/5.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">PLOUGHMAN'S LUNCH</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Conocido aperitivo frío de Reino Unido y consiste en trozos de queso cheddar, embutidos o cebolletas en vinagre, pan y mantequilla.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/6.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">ALOO TIKKI</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Un aperitivo del norte de la India hecho de patata machacada con diversas hierbas, como cilantro y especias, fritos en vanaspati (aceite vegetal).">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/7.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUASAÑA A LA LIMEÑA</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es un plato tradicional de la cocina peruana. Hecho a base de papa (patata), limón, ají amarillo, pollo, atún o mariscos. ">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/8.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BRETZEL</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Entrante originario de Alemania. Consiste en un bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card mediacarta">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed text-center" data-toggle="collapse"
+                                    data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                <h4>Segundos</h4>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/1.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pintxos</h5>
+                                    <button type="button" class="btn btn-secondary align-self-center" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Famoso aperitivo típico del norte de España. Rebanada de pan con ingredientes variados sujetos por un palillo. Entre los más comunes tortilla, merluza, pulpo, bacalao, pimientos rellenos, croquetas…">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/2.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BACKHENDL SALAT</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Típica de Austria, ensalada servida con tiras de pollo empanado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/3.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">INSALATA CAPRESE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es una de las ensaladas italianas típicas, lleva rodajas de tomate y bolas de mozzarella fresca. Se acompaña de unas hojas de albahaca y aceite de oliva.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/4.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUACAMOLE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Salsa de origen mexicano preparada con sal, pimienta, jugo de limón, cebolla picada y cilantro. Se sirve con totopos.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/5.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">PLOUGHMAN'S LUNCH</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Conocido aperitivo frío de Reino Unido y consiste en trozos de queso cheddar, embutidos o cebolletas en vinagre, pan y mantequilla.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/6.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">ALOO TIKKI</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Un aperitivo del norte de la India hecho de patata machacada con diversas hierbas, como cilantro y especias, fritos en vanaspati (aceite vegetal).">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/7.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUASAÑA A LA LIMEÑA</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es un plato tradicional de la cocina peruana. Hecho a base de papa (patata), limón, ají amarillo, pollo, atún o mariscos. ">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/8.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BRETZEL</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Entrante originario de Alemania. Consiste en un bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="split">
+                <div class="card mediacarta">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                <h4>Postres</h4>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/1.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pintxos</h5>
+                                    <button type="button" class="btn btn-secondary align-self-center" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Famoso aperitivo típico del norte de España. Rebanada de pan con ingredientes variados sujetos por un palillo. Entre los más comunes tortilla, merluza, pulpo, bacalao, pimientos rellenos, croquetas…">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/2.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BACKHENDL SALAT</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Típica de Austria, ensalada servida con tiras de pollo empanado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/3.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">INSALATA CAPRESE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es una de las ensaladas italianas típicas, lleva rodajas de tomate y bolas de mozzarella fresca. Se acompaña de unas hojas de albahaca y aceite de oliva.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/4.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUACAMOLE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Salsa de origen mexicano preparada con sal, pimienta, jugo de limón, cebolla picada y cilantro. Se sirve con totopos.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/5.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">PLOUGHMAN'S LUNCH</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Conocido aperitivo frío de Reino Unido y consiste en trozos de queso cheddar, embutidos o cebolletas en vinagre, pan y mantequilla.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/6.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">ALOO TIKKI</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Un aperitivo del norte de la India hecho de patata machacada con diversas hierbas, como cilantro y especias, fritos en vanaspati (aceite vegetal).">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/7.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUASAÑA A LA LIMEÑA</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es un plato tradicional de la cocina peruana. Hecho a base de papa (patata), limón, ají amarillo, pollo, atún o mariscos. ">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/8.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BRETZEL</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Entrante originario de Alemania. Consiste en un bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mediacarta">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                <h4>Bebidas</h4>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/1.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Pintxos</h5>
+                                    <button type="button" class="btn btn-secondary align-self-center" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Famoso aperitivo típico del norte de España. Rebanada de pan con ingredientes variados sujetos por un palillo. Entre los más comunes tortilla, merluza, pulpo, bacalao, pimientos rellenos, croquetas…">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/2.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BACKHENDL SALAT</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Típica de Austria, ensalada servida con tiras de pollo empanado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/3.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">INSALATA CAPRESE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es una de las ensaladas italianas típicas, lleva rodajas de tomate y bolas de mozzarella fresca. Se acompaña de unas hojas de albahaca y aceite de oliva.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/4.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUACAMOLE</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Salsa de origen mexicano preparada con sal, pimienta, jugo de limón, cebolla picada y cilantro. Se sirve con totopos.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/5.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">PLOUGHMAN'S LUNCH</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Conocido aperitivo frío de Reino Unido y consiste en trozos de queso cheddar, embutidos o cebolletas en vinagre, pan y mantequilla.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/6.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">ALOO TIKKI</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Un aperitivo del norte de la India hecho de patata machacada con diversas hierbas, como cilantro y especias, fritos en vanaspati (aceite vegetal).">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/7.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">GUASAÑA A LA LIMEÑA</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Es un plato tradicional de la cocina peruana. Hecho a base de papa (patata), limón, ají amarillo, pollo, atún o mariscos. ">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card " style="width: 24vw; display: inline-block; height: 25vh;">
+                                <img class="card-img-top" src="./img/entrantes/8.jpg" alt="Hey" style="height: inherit;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">BRETZEL</h5>
+                                    <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                                            data-placement="bottom"
+                                            title="Entrante originario de Alemania. Consiste en un bollo horneado, y retorcido en forma de lazo, con un sabor ligeramente salado.">
+                                        Descripción
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 nombre">
+            <p>Miguel Ángel Torres Varo</p>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 links">
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+            <a href="https://github.com/emeateuve"><img src="./img/github.svg"></a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4 col-4 copy">
+            <p>Emeateuve 2018 &copy;</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Marvel" rel="stylesheet">
+<!-- A VER SI ME MUERO YA -->
